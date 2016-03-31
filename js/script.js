@@ -15,7 +15,8 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
-var allCategoriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
+var allCategoriesUrl = 
+  "http://davids-restaurant.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 
@@ -74,9 +75,9 @@ function builAndShowCategoriesHTML (categories) {
 	 			function (categoryHtml) {
 	 				var categoriesViewHtml = 
 	 					builCategoriesViewHtml(categories,
-	 									       categoriesTitleHtml,
-	 										   categoryHtml);
-	 			insertHtml("#main-content", categoriesViewHtml);
+	 									               categoriesTitleHtml,
+	 										             categoryHtml);
+	 			insertHTML("#main-content", categoriesViewHtml);
 	 		},
 	 		false); //false to not process snippets as JASON
 	 	},
